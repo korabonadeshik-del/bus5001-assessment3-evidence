@@ -1,0 +1,4 @@
+message,baseline_category,category_score,baseline_urgency,urgency_score
+M1,Water,0.79,HIGH,0.36
+M2,Accessibility,0.92,MEDIUM,0.36
+M3,Procurement and supplier governance,0.78,HIGH,0.35
