@@ -3,7 +3,7 @@
 ## Privacy and data minimisation
 
 - The bot asks only for the **incident type** and the **building**. It asks for no name, staff ID, phone number or health information.
-- The agent is hosted in **`australia-southeast1` (Sydney)** ([evidence/03](../evidence/03-agent-settings-location.png)).
+- The agent is hosted in **`australia-southeast1` (Sydney)** (03-agent-settings-location.png)).
 - Test conversations used made-up reports only.
 
 ## Human oversight
@@ -22,4 +22,4 @@
 
 ## Known limitations
 
-See the Limitations section in the [main README](../README.md).
+See the Limitations section in the [main README](README.md).

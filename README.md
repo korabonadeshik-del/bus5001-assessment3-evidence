@@ -3,7 +3,7 @@
 A Dialogflow CX (Conversational Agents) prototype that lets staff, contractors and visitors of the fictional **Riverbend Corporate Campus** report sustainability and facilities incidents: water leaks, contaminated recycling, energy waste in empty rooms, unsafe disposal and blocked accessible paths.
 
 - **Platform:** Google Conversational Agents (Dialogflow CX), flow-based agent
-- **Agent location:** `australia-southeast1` (Sydney), shown in [evidence/03](evidence/03-agent-settings-location.png)
+- **Agent location:** `australia-southeast1` (Sydney), shown in [evidence/03](03-agent-settings-location.png)
 - **Data collected:** incident type and building only. The bot asks for no names, staff IDs or contact details.
 - **Status:** working prototype. Escalation and logging are simulated (see Limitations).
 
@@ -32,18 +32,18 @@ flowchart TD
     RG --> E
 ```
 
-The screenshot of the built flow is [evidence/01-flow-map-final.png](evidence/01-flow-map-final.png).
+The screenshot of the built flow is [evidence/01-flow-map-final.png](01-flow-map-final.png).
 
 ## Contents
 
 | Path | What it holds |
 |---|---|
-| [`design/conversation-design.md`](design/conversation-design.md) | Pages, routes, messages and the reasoning behind them |
-| [`design/intents-and-entities.md`](design/intents-and-entities.md) | Intents, entity types, parameters |
-| [`design/governance-and-accessibility.md`](design/governance-and-accessibility.md) | Privacy, human oversight, accessibility, limitations |
-| [`testing/test-log.md`](testing/test-log.md) | Every test run, the faults found and how each was fixed |
-| [`testing/T3-execution-log-raw.txt`](testing/T3-execution-log-raw.txt) | Raw Dialogflow execution log for the urgent-branch test |
-| [`evidence/`](evidence/) | Screenshots, numbered in build order (`01`-`12` build, `20`s tests, `30`s faults found) |
+| [`conversation-design.md`](conversation-design.md) | Pages, routes, messages and the reasoning behind them |
+| [`intents-and-entities.md`](intents-and-entities.md) | Intents, entity types, parameters |
+| [`governance-and-accessibility.md`](governance-and-accessibility.md) | Privacy, human oversight, accessibility, limitations |
+| [`test-log.md`](test-log.md) | Every test run, the faults found and how each was fixed |
+| [`T3-execution-log-raw.txt`](T3-execution-log-raw.txt) | Raw Dialogflow execution log for the urgent-branch test |
+| the `.png` files in this repository | Screenshots, numbered in build order (`01`-`12` build, `20`s tests, `30`s faults found) |
 
 ## Limitations
 
