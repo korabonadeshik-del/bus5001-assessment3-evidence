@@ -14,7 +14,7 @@ A Dialogflow CX (Conversational Agents) prototype that lets staff, contractors a
 3. If the type is *hazardous disposal*, it **branches** to an emergency referral (call 000 or the on-site emergency number) and ends. It does not file a normal report.
 4. Otherwise it reads back a summary and asks the user to confirm or change it.
 5. On confirmation it gives a closing message and ends.
-6. At any point the user can ask for a person, which routes to a **human hand-off** page.
+6. The user can ask for a person, which routes to a **human hand-off** page. This was tested at the start of a conversation (T4), not from the middle of one.
 
 ## Conversation flow
 

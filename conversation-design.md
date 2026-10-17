@@ -48,4 +48,4 @@ One focused ESG use case: **incident reporting** for the fictional Riverbend Cor
 - **Two questions only.** Type and building are enough to route a report. Asking for less data keeps the conversation short and avoids collecting personal information.
 - **The urgent route is plain.** The emergency message has no friendly wording on purpose.
 - **Confirm before ending.** The summary read-back lets the user correct a wrong type or building.
-- **A human is always reachable.** The `speak.human` route is on the Start Page, so it can be used at any time.
+- **A human can be requested.** The `speak.human` route sits on the Start Page. It was tested at the first turn (T4). Using it from the middle of a conversation was not tested.

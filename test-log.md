@@ -10,6 +10,7 @@ Tested in the Dialogflow CX **Preview** simulator (Draft environment, Default St
 | T1 | 17 Oct | Welcome message | One custom welcome | **Pass** after fix | [10](10-welcome-route-and-test.png) |
 | T2 | 17 Oct, 4:09 PM | Normal report (not hazardous) | Asks type, then building, then confirm summary | **Pass** | [20](20-test-T2-normal-report.png) |
 | T3 | 17 Oct | Urgent report (building "lab", type "hazardous disposal") | Emergency Referral message, session ends | **Fail, then fixed**: the urgent message showed, then the page looped | [raw log](T3-execution-log-raw.txt), [11](11-emergency-referral-page.png) |
+| T5 | 17 Oct | "lab", then "b" and "B" typed at the building question | The bot should re-ask when it does not understand | **Pass for re-asking**: default replies "Sorry, can you say that again?" and "I didn't get that. Can you say it again?" appeared. No hand-off after repeated misses is configured. | [34](34-iter-single-letter-building.png) |
 | T4 | 17 Oct, 6:48 PM | User asks for a person | Human Hand-off message, session ends | **Pass** | [22](22-test-T4-human-handoff.png) |
 
 ## Faults found and fixed
@@ -32,6 +33,7 @@ Tested in the Dialogflow CX **Preview** simulator (Draft environment, Default St
 - Confirm step: answering **yes** through to the closing message
 - Confirm step: answering **change** and returning to the questions
 - The global urgent-hazard route from the Start Page (for example a message describing a gas smell)
-- No-match and no-input fallback handlers leading to the human hand-off
+- Asking for a person from the middle of a conversation (T4 was at the first turn)
+- No-match handlers leading to the human hand-off after repeated misses (not configured)
 - Clean re-run of T3 after the loop fix
 - Screen reader and voice input

@@ -9,7 +9,7 @@
 ## Human oversight
 
 - **Urgent hazards are not handled by the bot.** The Emergency Referral page tells the user to call 000 or the on-site emergency number and ends without filing anything.
-- **A person can be requested at any time** through the `speak.human` route.
+- **A person can be requested** through the `speak.human` route (tested at the first turn only).
 - The bot gives no safety advice of its own and promises no response time.
 
 ## Accessibility
@@ -17,7 +17,7 @@
 - One short question at a time, in plain language.
 - Text-only conversation, so screen readers can read it and nothing depends on colour or images.
 - Incident types are given as examples in the prompt, and synonyms (for example "tap", "ceiling" and "flood" for a water leak) let users describe a problem in their own words.
-- A route to a person is always available.
+- A route to a person is available (tested at the first turn).
 - **Not tested:** use with a screen reader, and voice input.
 
 ## Known limitations
